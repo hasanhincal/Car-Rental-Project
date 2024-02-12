@@ -1,0 +1,447 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Değişkenlerimiz */
+
+:root{
+    --main-color: orangered;
+    --second-color: orange;
+    --thirth-color:#fff;
+    --text-color: #444;
+    --bg-color: #eeeff2;
+    
+}
+
+/* Header Start */
+
+header{
+    background-color:var(--bg-color);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+
+    
+}
+nav img{
+    width: 40px;
+    
+}
+.header_navbar{
+    display: flex;
+
+}
+.header_navbar li{
+    list-style-type: none;
+}
+.header_navbar li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: var(--text-color);
+
+}
+.header_navbar li a:hover{
+    color: var(--main-color);
+    transition: .5s;
+}
+
+.header_button a{
+    text-decoration: none;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color:var(--thirth-color);
+   
+}
+.header_button a:hover{
+    background-color: purple;
+    transition: .3s;
+}
+
+
+/* Anasayfa */
+
+.home{
+ background: url(images/Car\ Website\ –\ 1@2x.png);
+ width: 100%;
+ height: 90vh;
+ background-position: 50% 40%;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ align-items: center;
+ 
+ position: relative;
+
+}
+
+.home_text{
+    padding: 20px;
+}
+.home_text h1{
+    font-size: 50px;
+}
+.home_text h1 span{
+    color: var(--main-color);
+}
+.home_text p{
+    margin: 15px;
+}
+.home_app_stores{
+    display: flex;
+    gap: 10px;
+}
+.home_app_stores img{
+    width: 100px;
+    cursor: pointer;
+}
+.form_container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--thirth-color);
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 4rem;
+    left: 20px;
+}
+.input_box label{
+   color: var(--text-color);
+
+}
+.input_box input{
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128,128,0.299);
+}
+.form_container form .button{
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: var(--thirth-color);
+    transition: .5s;
+}
+.form_container form .button:hover{
+    transform:scale(0.9);
+    background-color: purple;
+    transition: .3s;
+}
+
+/* Ride */
+
+.heading{
+text-align: center;
+background-color: var(--bg-color);
+padding: 5px 0;
+margin-top: 30px;
+
+}
+.heading span{
+    color: var(--main-color);
+    font-size: 20px;
+    font-weight: 800;
+}
+.heading h1{
+font-size: 35px;
+}
+
+.box_container{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    gap: 20px;
+    margin-top: 20px;
+   
+   
+}
+.box_icon{
+    margin-bottom: 10px;
+}
+.box_icon a i{
+    text-align: center;
+    font-size: 30px;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+    border-radius: 50%;
+    padding: 8px;   
+}
+.box_icon a i:hover{
+    transition: .3s ease-in-out;
+    color: var(--thirth-color);
+    background-color: var(--main-color); 
+}
+.box_container h3{
+    font-size: bold;
+}
+
+/* sevices */
+
+.services_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px, auto));
+    gap: 15px;
+    margin-top: 30px;
+}
+.services_container .box{
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.services_container .box:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+.services_container .box .box_img{
+    width: 100%;
+    height: 300px;
+}
+.services_container .box .box_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+}
+.services_container .box p{
+    padding: 10px;
+    border: 1px solid black;
+    width: 60px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.services_container .box h3{
+    font-weight: bold;
+}
+.services_container .box h2{
+    color: var(--main-color);
+}
+.services_container .box h2 span{
+    color: var(--text-color);
+}
+.services_container .box a{
+    background-color: purple;
+    color: var(--thirth-color);
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+.services_container .box a:hover{
+    background-color: var(--main-color);
+    transition: .5s;
+}
+
+/* About */
+
+.about_container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 20px;
+}
+.about_img img{
+    width: 100%;
+}
+.about_text span{
+    color: var(--main-color);
+}
+.about_text p{
+    margin: 20px;
+    font-style: italic;
+}
+.about_text a{
+    text-decoration: none;
+    padding: 5px;
+    background-color:var(--main-color);
+    color: var(--thirth-color);
+    border-radius: 10px;
+    
+    
+}
+.about_text a:hover{
+    background-color:purple ;
+    transition: .3s ease-in-out;
+    
+}
+
+/* Reviews */
+
+.reviews_container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+.rev_img{
+    width: 70px;
+    height: 70px;
+}
+.rev_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+}
+.reviews_container .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.reviews_container .box:hover{
+    scale: 1.03;
+}
+.reviews_container .box h3{
+    color: var(--main-color);
+}
+.reviews_container .box .stars{
+    color:goldenrod;
+}
+
+/* Newsletter */
+
+.news_container{
+    background: linear-gradient(orangered,orange);
+    margin-top: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.news_container .box{
+    background-color: var(--thirth-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+}
+.news_container h3{
+    color:var(--text-color);
+    font-size: 35px;
+}
+.news_container .mail_box{
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    margin: 15px;
+}
+.news_container a{
+    text-decoration: none;
+    background-color: var(--main-color);
+    color: var(--thirth-color);
+    border-radius: 10px;
+    padding: 5px;
+}
+.news_container a:hover{
+    background-color: purple;
+    transition: .3s;
+    transform: scale(1.01);
+}
+
+/* footer */
+
+.copy_container{
+    background-color:red;
+    color: var(--thirth-color);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--thirth-color);
+    padding: 20px;
+
+}
+.copy_container a{
+    text-decoration: none;
+    color:var(--thirth-color) ;
+    font-style: italic;
+   
+}
+.copy_container a:hover{
+    text-decoration: underline;
+}
+.copy_social{
+    display: flex;
+    justify-content:center;
+    gap: 8px; 
+    color: silver;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.copy_social i:hover{
+color: var(--thirth-color);
+}
+
+/* Mail html */
+
+.mail_box{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    margin-top: 40px;
+    padding: 20px;
+}
+.mail_box i{
+    color: green;
+    font-size: 50px;
+}
+.mail_box h3{
+    color: var(--text-color);
+    font-size: 24px;
+
+}
+.mail_box span{
+    color: green;
+}
+
+/* !Responsive Area */
+
+@media screen and (max-width:768px) {
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .header_button{
+       display: flex;
+       gap: 10px;
+       margin: 10px;    
+    }
+    .form_container form{
+        display:flex;
+        flex-direction: column;
+        margin-left: 270px;
+        opacity: 0.9;
+        transition: .9s;
+    }
+
+}
