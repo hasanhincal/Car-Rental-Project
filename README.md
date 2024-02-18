@@ -1,14 +1,16 @@
 <h1>Car Rental website</h1>
 
-<h2>Kullanılan Teklonojiler</h2>
+The Car rental project has a static struture.
 
-HTML5 ve CSS3
+<h2>Technologies used in the project</h2>
 
-<h2>Ekran Gifi</h2>
+Codded in HTML5 ve CSS3
+
+<h2>Screen Gif</h2>
 
 ![](screen.gif)
 
-<h2>Ekran görüntüsü</h2>
+<h2>Screen picture</h2>
 
 ![](Ekran%20görüntüsü1.png)
 
